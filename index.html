@@ -11,46 +11,56 @@
  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <section id="header">
+    <div id="product-alert">
+        <div class="product-info">
+            <img src="" alt="product Image" id="product-image">
+            <div id="product-text"></div>
+            <button id="close-btn">Close</button>
+        </div>
+       </div>
+       
+    <div class="header">
         <div class="container">
             <div class="navbar">
             <div class="logo">
-                <h1>AC</h1>
+                <h1>AC <span class="edoscoba">Edoscoba LTD</span></h1>
             </div>
             <nav>
                 <ul id="menuItems">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">Acount</a></li>
+                    <li><a onclick="home()" >Home</a></li>
+                    <li><a onclick="product()">Product</a></li>
+                    <li><a onclick="#">About</a></li>
+                    <li><a onclick="#">contact</a></li>
+                    
 
                 </ul>
             </nav>
             <img src="https://dl.dropbox.com/s/6tau9l1cua5jxwz/cart.png?dl=0" width="30px" height="30px" alt="logo">
             <i class="fa fa-bars menu-icons" onclick="menutoggle()"></i>
             </div>
+            <div id="home-section">
             <div class="row">
+                
                 <div class="col-2">
                     <h1>Give your coding a new style</h1>
                     <p>Do you want to build for the the blockchain?<br>
 
                        
                         worry no more because Web3bridge can make this desires a reality.</p>
-                    <p>Success isn't always about greatness, it's about consistency. consistence hard work gains success. gretness will come.</p>
+                    <p>Success isn't always about greatness, it's about consistency. <br> consistence hard work gains success. gretness will come.</p>
                     <p>learn with web3bridge and you will never regrect about it</p>
-                    <a href="https://www.web3bridge.com/" class="btn ">Eplore Now &#8594;</a>
+                    <a href="https://www.web3bridge.com/" class="my-btn ">Explore Now &#8594;</a>
                 </div>
     <div class="col-2">
         
-        <img src="https://www.web3bridge.com/_next/static/media/cohorts.9b73a59c.svg" alt="image" >
+        <img src="https://www.web3bridge.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-dark.55f23e71.png&w=3840&q=75" alt="image" >
     </div>
-                </div>
-            </div>
+                
+            
        
-    </section>
+     
     <!-- featured categories -->
-    <section class="categories">
+    <div class="categories">
         <div class="small container">
             <div class="row">
                 <div class="col-3"></div>
@@ -60,9 +70,9 @@
         </div>
     </div>
 
-    </section>
+</div>
     <!-- featured product -->
-    <section class="">
+    <div class="">
         <h2 class="title">Featured Product</h2>
         <div class="row">
             <div class="col-4">
@@ -90,6 +100,7 @@
                 </div>
                 <p>$2.00</p>
             </div>
+            
             <div class="col-4">
                 <img src="https://freepngimg.com/thumb/categories/627.png" alt="image">
                 <h4>blue Canvas</h4>
@@ -103,13 +114,26 @@
             </div>
             <p>$20.00</p>
         </div>
+        <div class="col-4">
+            <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/43/9804491/1.jpg?2810" alt="image">
+            <h4>ADIDAS Essentials Logo Backpack</h4>
+
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-0"></i>
+                <i class="fa fa-star-0"></i>
+        </div>
+        <p>$12.00</p>
+    </div>
    </div>
   </div>
   <h2 class="title">Latest Products</h2>
   <div class="row">
    <div class="col-4">
-    <img src="https://res.cloudinary.com/dhktoeo0l/image/upload/v1608983915/download-removebg-preview_k1ng9j.png">
-    <h4>White Shirt</h4>
+    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/15/1660032/1.jpg?1375">
+    <h4>Tecno POP 7</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -121,8 +145,8 @@
     <p>$50.00</p>
    </div>
    <div class="col-4">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGfqnxytUpie117zLoV0IL76RnGtgLGJ8oAg&usqp=CAU">
-    <h4>White Shirt</h4>
+    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/22/842289/1.jpg?7648">
+    <h4>Men Suit Smart Suit</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -134,8 +158,8 @@
     <p>$50.00</p>
    </div>
    <div class="col-4">
-    <img src="https://res.cloudinary.com/dhktoeo0l/image/upload/v1608970734/images__1_-removebg-preview_qfki9d.png">
-    <h4>White Shirt</h4>
+    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/96/881308/2.jpg?9465">
+    <h4>Converse Chuck Taylor All Star High Top</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -148,7 +172,7 @@
    </div>
    <div class="col-4">
     <img src="https://www.pngarts.com/files/7/Modern-Furniture-PNG-Image-Background.png">
-    <h4>White Shirt</h4>
+    <h4>Funiture chair</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -163,7 +187,7 @@
   <div class="row">
    <div class="col-4">
     <img src="https://res.cloudinary.com/dhktoeo0l/image/upload/v1608983915/download-removebg-preview_k1ng9j.png">
-    <h4>White Shirt</h4>
+    <h4>PS 5 </h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -175,8 +199,8 @@
     <p>$50.00</p>
    </div>
    <div class="col-4">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGfqnxytUpie117zLoV0IL76RnGtgLGJ8oAg&usqp=CAU">
-    <h4>White Shirt</h4>
+    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/90/532028/1.jpg?7205">
+    <h4>Advanced All-In-One Virtual <br> Reality Headset</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -189,7 +213,7 @@
    </div>
    <div class="col-4">
     <img src="https://res.cloudinary.com/dhktoeo0l/image/upload/v1608970734/images__1_-removebg-preview_qfki9d.png">
-    <h4>White Shirt</h4>
+    <h4>windows laptop</h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -201,8 +225,8 @@
     <p>$50.00</p>
    </div>
    <div class="col-4">
-    <img src="https://www.pngarts.com/files/7/Modern-Furniture-PNG-Image-Background.png">
-    <h4>White Shirt</h4>
+    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/08/4300581/1.jpg?4152">
+    <h4> Cordless Rechargeable Clipper </h4>
     
     <div class="rating">
      <i class="fa fa-star"></i>
@@ -211,7 +235,7 @@
      <i class="fa fa-star"></i>
      <i class="fa fa-star-o"></i>
     </div>
-    <p>$50.00</p>
+    <p>$20.00</p>
    </div>
   </div>
  </div>
@@ -227,7 +251,7 @@
       <p>Exclusively available on Redstore</p>
       <h1>Small band 4</h1>
       <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) Amoled color-touch full display with adjustable brightness. So everything is clear as can be.</small>
-      <a href="#" class="btn">Buy Now &#8594;</a>
+      <a href="#" class="my-btn">Buy Now &#8594;</a>
      </div>
     </div>
 
@@ -307,6 +331,95 @@
   </div>
  </div>
  </div>
+</div>
+
+<!-- product for navigation product -->
+<div id="product-section">
+    <div class="welcome">
+        <h1>Welcome to Edoscoba store!</h1>
+        <p>We have the best cameras, wartches, furnitures and shirts for you <br> No need to hunt around, we have all in one place  </p>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/3e/d4/82/3ed4820d66cc004588d7ca1db2062a9f.jpg" alt="">
+            <h4>Canon EOS</h4>
+            <p>Price: Rs. 36000.00</p>
+            <button type="button" value="cart" class="btn"  onclick="addCart()">Add to cart</button>
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/a9/64/29/a964298215c848b0e1ed3c54a30653d7.jpg" alt="">
+            <h4>Samsung DSLR</h4>
+            <p>Price: Rs. 40000.00</p>
+            <button type="button" value="cart" class="btn"  onclick="addCart()">Add to cart</button>
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/f5/cd/48/f5cd481239d92cf0a0af09ec094e987a.jpg" alt="">
+            <h4>Sony DSLR</h4>
+            <p>Price: Rs. 50000.00</p>    
+            <button type="button" value="cart" class="btn" onclick="addCart()">Add to cart</button>
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/dc/a1/43/dca1439a2fbea18f35885a82a2d8b4a2.jpg" alt="">
+            <h4>Olympus DSLR</h4>
+            <p>Price: Rs. 80000.00</p>    
+            <button type="button" value="cart" class="btn"onclick="addCart()">Add to cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/d4/28/a3/d428a36ac88c9f3e43d37f8aa277ae8d.jpg" alt="">
+            <h4>Titan Model #301</h4>
+            <p>Price: Rs. 13000.00</p> 
+            <button type="button" value="cart" class="btn"  onclick="addCart()">Add to cart</button>   
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/ec/a5/bc/eca5bcdf68f710caac6eeac11dc36330.jpg" alt="">
+            <h4>Titan Model #201</h4>
+            <p>Price: Rs. 3000.00</p>
+            <button type="button" value="cart" class="btn" onclick="addCart()"> Add to cart</button>  
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/e6/f5/e2/e6f5e2ebb1c77ba98da6e8896b36cbaa.jpg" alt="">
+            <h4>>HMT Milan</h4>
+            <p>Price: Rs. 8000.00</p>    
+            <button type="button" value="cart" class="btn" onclick="addCart()">Add to cart</button> 
+        </div>
+    <div class="col-4">
+        <img src="https://i.pinimg.com/originals/ea/8c/5b/ea8c5be9f45ead0ec6ee078a464dc7bb.jpg" alt="">
+        <h4>Faber Luba #111</h4>
+        <p>Price: Rs. 18000.00</p>    
+        <button type="button" value="cart" class="btn "  onclick="addCart()">Add to cart</button> 
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/30/a1/4d/30a14dd6b550c6ff2a0c688f5020fc42.jpg" alt="">
+            <h4>H&W</h4>
+            <p>Price: Rs. 800.00</p>   
+            <button type="button" value="cart" class="btn"  onclick="addCart()">Add to cart</button>  
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/0c/73/f1/0c73f1c648881f0b875877f1a2126d1a.jpg" alt="">
+            <h4>Luis Ph</h4>
+            <p>Price: Rs.1000.00</p>    
+            <button type="button" value="cart" class="btn ">Add to cart</button>  
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/14/e7/0b/14e70bc0258c7ac05e06dfcb7ef8a35d.jpg" alt="">
+            <h4>John Zok</h4>
+            <p>Price: Rs. 1500.00</p>    
+            <button type="button" value="cart" class="btn"  onclick="addCart()">Add to cart</button>  
+        </div>
+        <div class="col-4">
+            <img src="https://i.pinimg.com/originals/0c/73/f1/0c73f1c648881f0b875877f1a2126d1a.jpg" alt="">
+            <h4>Luis Ph</h4>
+            <p>Price: Rs.1000.00</p>    
+            <button type="button" value="cart" class="btn ">Add to cart</button>  
+        </div>
+    </div>
+  
+</div>
 
  <!------- footer ----------->
 
@@ -345,8 +458,8 @@
     </div>
    </div>
         
-        
-    </section>
+    
+  
    <script src="script.js"></script>
    <script src="https://kit.fontawesome.com/637a2603e1.js" crossorigin="anonymous"></script> 
 </body>
